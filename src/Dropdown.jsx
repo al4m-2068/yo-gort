@@ -1,5 +1,4 @@
 import  { useState } from 'react';
-import '';
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
