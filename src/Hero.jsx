@@ -1,22 +1,18 @@
 import React from 'react';
-import logo from './assets/Group 2.svg'; // Sesuaikan path logo kamu
 import './Hero.css';
 
 const Hero = () => {
   return (
     <div className="hero-wrapper">
-      {/* Navbar Mobile Style */}
       <nav className="navbar">
         <div className="menu-icon">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <img src={logo} alt="Yo!Gort Logo" className="nav-logo" />
         <button className="btn-order">Order Now</button>
       </nav>
 
-      {/* Hero Content */}
       <section className="hero-section">
         <div className="badge">FINE RECIPE!</div>
         
