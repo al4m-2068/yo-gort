@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-
+import '';
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +17,7 @@ const FAQItem = ({ question, answer }) => {
         
         {/* Ikon Panah dengan Animasi Putar */}
         <svg
-          className={`w-5 h-5 sm:w-6 sm:h-6 text-[#3a1a4d] transition-transform duration-300 flex-shrink-0 ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-5 h-5 sm:w-6 sm:h-6 text-[#3a1a4d] transition-transform duration-300 shrink-0 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
