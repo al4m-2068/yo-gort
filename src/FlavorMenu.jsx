@@ -19,7 +19,7 @@ const FlavorMenu = () => {
     <section className="bg-whitey min-h-screen px-6 py-12 font-sans">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <h1 className="text-[40px]/[110%] font-extrabold text-[#2d1b4d] font-brigro">
+        <h1 className="text-[40px]/[110%] font-bold text-[#2d1b4d] font-brigro">
           Pick Your <span className="text-redo">Flavor</span>
         </h1>
         <p className="text-[16px]">
@@ -45,10 +45,10 @@ const FlavorMenu = () => {
           >
             {/* Top Row: Badge & Rating */}
             <div className="flex justify-between items-center mb-4 ">
-              <span className={`${getBadgeClass(item.badgeType)} text-[10px] font-bold px-3 py-1 rounded-full`}>
+              <span className={`${getBadgeClass(item.badgeType)} text-[10px] font-nuni px-3 py-1 rounded-full`}>
                 {item.badge}
               </span>
-              <div className="flex items-center gap-1 text-[#4a9d9c] font-bold text-xs">
+              <div className="flex items-center gap-1 font-nuni text-[#4a9d9c] font-bold text-xs">
                 <span>★</span>
                 <span>{item.rating.toFixed(1)}</span>
               </div>
