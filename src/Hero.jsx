@@ -1,35 +1,43 @@
-import React from 'react';
-import './Hero.css';
+import React from "react";
 
 const Hero = () => {
   return (
-    <div className="hero-wrapper">
-      <nav className="navbar">
-        <div className="menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <button className="btn-order">Order Now</button>
-      </nav>
+    <div className="bg-whitey min-h-screen px-5 font-sans">
 
-      <section className="hero-section">
-        <div className="badge">FINE RECIPE!</div>
-        
-        <h1 className="hero-title">
+      {/* Hero Section */}
+      <section className="text-center max-w-[400px] mx-auto">
+
+        {/* Badge */}
+        <div className="bg-aquo text-navo inline-block px-[15px] py-[6px] rounded-[20px] text-[12px] font-bold rotate-[-2deg] mb-5">
+          FINE RECIPE!
+        </div>
+
+        {/* Title */}
+        <h1 className="text-navo text-[42px] leading-none mb-[25px] font-black">
           Your Daily <br />
           Spoon of <br />
-          <span className="highlight">Happiness</span>
+          <span className="text-redo">
+            Happiness
+          </span>
         </h1>
 
-        <p className="hero-desc">
-          Indulge in our creamy, probiotic-rich yogurt made with 100% natural 
+        {/* Description */}
+        <p className="text-grey text-[16px] leading-[1.5] mb-10">
+          Indulge in our creamy, probiotic-rich yogurt made with 100% natural
           ingredients and a whole lot of love.
         </p>
 
-        <div className="button-group">
-          <button className="btn-primary">Shop Now</button>
-          <button className="btn-outline">Explore Flavors</button>
+        {/* Buttons */}
+        <div className="flex flex-col gap-[15px]">
+
+          <button className="bg-redo text-white border-none p-5 rounded-[40px] text-[20px] font-bold">
+            Shop Now
+          </button>
+
+          <button className="bg-white text-navo border-2 border-aquo p-5 rounded-[40px] text-[20px] font-bold">
+            Explore Flavors
+          </button>
+
         </div>
       </section>
     </div>

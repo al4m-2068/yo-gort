@@ -5,18 +5,18 @@ const FAQItem = ({ question, answer }) => {
   return (
     <div 
       className={`w-full mb-3 sm:mb-4 transition-all duration-300 rounded-2xl sm:rounded-[40px] border-2 
-      ${isOpen ? 'border-cyan-300 bg-[#f0f9f9]' : 'border-transparent bg-[#f9f8eb]'}`}
+      ${isOpen ? 'border-aquo bg-aquo/10' : 'border-transparent bg-whitey'}`}
     >
       {/* Header / Tombol Pertanyaan */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex items-center justify-between px-4 sm:px-8 py-4 sm:py-[24px] text-left focus:outline-none hover:opacity-75 transition-opacity"
       >
-        <span className="text-base sm:text-lg font-semibold text-[#3a1a4d] pr-3">{question}</span>
+        <span className="text-base sm:text-lg font-semibold text-navo pr-3">{question}</span>
         
         {/* Ikon Panah dengan Animasi Putar */}
         <svg
-          className={`w-5 h-5 sm:w-6 sm:h-6 text-[#3a1a4d] transition-transform duration-300 shrink-0 ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-5 h-5 sm:w-6 sm:h-6 text-navo transition-transform duration-300 shrink-0 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ const FAQItem = ({ question, answer }) => {
       {/* Konten Jawaban dengan Animasi Naik-Turun Grid */}
       <div className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
         <div className="overflow-hidden">
-          <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-sm sm:text-base text-[#6b567a] leading-relaxed">
+          <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-sm sm:text-base text-navo/70 leading-relaxed">
             {answer}
           </div>
         </div>
@@ -45,7 +45,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fffcf9] px-4 sm:px-6 lg:px-8 py-12 sm:py-16 flex flex-col items-center">
+    <div className="min-h-screen bg-whitey px-4 sm:px-6 lg:px-8 py-12 sm:py-16 flex flex-col items-center">
       <h1 className="text-3xl font-brigro sm:text-4xl lg:text-5xl font-black text-[#3a1a4d] text-center mb-8 sm:mb-12 tracking-tight">
         Common <br /> <span>Questions</span>
       </h1>
