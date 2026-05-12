@@ -22,7 +22,7 @@ const FlavorMenu = () => {
         <h1 className="text-[40px]/[110%] font-bold text-[#2d1b4d] font-brigro">
           Pick Your <span className="text-redo">Flavor</span>
         </h1>
-        <p className="text-[16px]">
+        <p className="text-[16px] font-nuni">
           {menuData.sectionSubtitle}
         </p>
       </div>
