@@ -46,11 +46,11 @@ const FAQSection = () => {
 
   return (
     <div className="min-h-screen bg-[#fffcf9] px-4 sm:px-6 lg:px-8 py-12 sm:py-16 flex flex-col items-center">
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#3a1a4d] text-center mb-8 sm:mb-12 tracking-tight">
-        Common <br /> <span className="underline decoration-cyan-300 underline-offset-4 sm:underline-offset-8">Questions</span>
+      <h1 className="text-3xl font-brigro sm:text-4xl lg:text-5xl font-black text-[#3a1a4d] text-center mb-8 sm:mb-12 tracking-tight">
+        Common <br /> <span>Questions</span>
       </h1>
       
-      <div className="w-full max-w-xs sm:max-w-2xl">
+      <div className="w-full max-w-xs sm:max-w-2xl font-nuni">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
