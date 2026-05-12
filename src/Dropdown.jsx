@@ -10,7 +10,7 @@ const FAQItem = ({ question, answer }) => {
       {/* Header / Tombol Pertanyaan */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6 text-left focus:outline-none hover:opacity-75 transition-opacity"
+        className="w-full flex items-center justify-between px-4 sm:px-8 py-4 sm:py-[24px] text-left focus:outline-none hover:opacity-75 transition-opacity"
       >
         <span className="text-base sm:text-lg font-semibold text-[#3a1a4d] pr-3">{question}</span>
         
