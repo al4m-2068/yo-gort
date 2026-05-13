@@ -1,6 +1,6 @@
 export default function Testimonials() {
   return (
-    <section className="w-full min-h-screen bg-[#F7F6E5] overflow-hidden relative pt-[72px] pb-[72px] px-6">
+    <section id="joys" className="w-full overflow-hidden relative py-20 px-8">
 
       {/* blur bg */}
       <div className="absolute w-[220px] h-[220px] bg-[rgba(118,210,219,0.12)] blur-[90px] rounded-full top-[180px] left-[-100px]" />

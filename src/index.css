@@ -15,6 +15,9 @@
     --color-grey: #474740;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
-    @apply font-nuni
+    @apply font-nuni bg-cream
 }

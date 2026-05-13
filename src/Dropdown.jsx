@@ -5,12 +5,12 @@ const FAQItem = ({ question, answer }) => {
   return (
     <div 
       className={`w-full mb-3 sm:mb-4 transition-all duration-300 rounded-2xl sm:rounded-[40px] border-2 
-      ${isOpen ? 'border-aquo bg-aquo/10' : 'border-transparent bg-whitey'}`}
+      ${isOpen ? 'border-aquo bg-aquo/10' : 'border-transparent bg-cream'}`}
     >
       {/* Header / Tombol Pertanyaan */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between px-4 sm:px-8 py-4 sm:py-[24px] text-left focus:outline-none hover:opacity-75 transition-opacity"
+        className="w-full flex items-center justify-between p-6 cursor-pointer text-left focus:outline-none hover:opacity-75 transition-opacity"
       >
         <span className="text-base sm:text-lg font-semibold text-navo pr-3">{question}</span>
         
@@ -45,9 +45,9 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="bg-whitey px-4 sm:px-6 lg:px-8 py-12 sm:py-16 flex flex-col items-center">
-      <h1 className="text-3xl font-brigro sm:text-4xl lg:text-5xl font-black text-[#3a1a4d] text-center mb-8 sm:mb-12 tracking-tight">
-        Common <br /> <span>Questions</span>
+  <section id='faq' className="bg-whitey px-8 py-12 flex flex-col items-center">
+      <h1 className="text-[40px] font-brigro sm:text-4xl lg:text-5xl font-black text-[#3a1a4d] text-center mb-8 sm:mb-12 tracking-tight">
+        Common <span>Questions</span>
       </h1>
       
       <div className="w-full font-nuni">
@@ -55,7 +55,7 @@ const FAQSection = () => {
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
