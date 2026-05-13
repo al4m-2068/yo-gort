@@ -19,7 +19,7 @@ const FlavorMenu = () => {
     <section className="bg-whitey min-h-screen px-6 py-12 font-sans">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <h1 className="text-[40px]/[110%] font-bold text-[#2d1b4d] font-brigro">
+        <h1 className="text-[40px]/[110%] font-bold text-navo font-brigro">
           Pick Your <span className="text-redo">Flavor</span>
         </h1>
         <p className="text-[16px] font-nuni">
@@ -55,7 +55,7 @@ const FlavorMenu = () => {
             </div>
 
             {/* Content */}
-            <h3 className="text-[24px]/[110%] font-brigro font-bold text-[#2d1b4d] mb-1">{item.name}</h3>
+            <h3 className="text-[24px]/[110%] font-brigro font-bold text-navo mb-1">{item.name}</h3>
             <p className="font-nuni text-navo/60 text-[16px] leading-relaxed mb-6 w-3/4">
               {item.description}
             </p>
