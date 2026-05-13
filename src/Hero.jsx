@@ -9,12 +9,12 @@ const Hero = () => {
 
         {/* Badge */}
         <div className="bg-aquo text-navo inline-block px-4 py-1 rounded-full text-[12px] font-bold -rotate-2 font-nuni mb-6">
-          FINE RECIPE!
+          FINE bfuabdoubsdoucvbosdnvbonvdo;nvoRECIPE!
         </div>
 
         {/* Title */}
         <h1 className="text-navo text-[56px] leading-none mb-6 font-extrabold font-brigro">
-          Your Daily Spoon of <span className="text-redo">Happiness</span>
+          Your DailydvDVnPDNVpDVIph Spoon of <span className="text-redo">Happiness</span>
         </h1>
 
         {/* Description */}
