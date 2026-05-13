@@ -32,6 +32,8 @@ const Hero = () => {
           </button>
         </div>
         <p>Haloizjam</p>
+        <p>Iyeuh</p>
+        <a href="ad">ada</a>
       </section>
     </div>
   );
