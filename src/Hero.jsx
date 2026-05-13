@@ -9,12 +9,14 @@ const Hero = () => {
 
         {/* Badge */}
         <div className="bg-aquo text-navo inline-block px-4 py-1 rounded-full text-[12px] font-bold -rotate-2 font-nuni mb-6">
-          FINE bfuabdoubsdoucvbosdnvbonvdo;nvoRECIPE!
+          FINE RECIPE!
         </div>
+
+        
 
         {/* Title */}
         <h1 className="text-navo text-[56px] leading-none mb-6 font-extrabold font-brigro">
-          Your DailydvDVnPDNVpDVIph Spoon of <span className="text-redo">Happiness</span>
+          Your Spoon of <span className="text-redo">Happiness</span>
         </h1>
 
         {/* Description */}
@@ -32,6 +34,8 @@ const Hero = () => {
             Explore Flavors
           </button>
         </div>
+        <p>p konflik</p>
+        <p>are we fr bro ;-;</p>
       </section>
     </div>
   );
