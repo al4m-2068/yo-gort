@@ -18,7 +18,7 @@ export default function Testimonials() {
         </div>
 
         {/* card 1 */}
-        <div className="w-full bg-white rounded-[34px] pt-[26px] pb-[26px] px-[22px] mb-7 rotate-[-5deg] relative shadow-[0_12px_30px_rgba(0,0,0,0.05),inset_0_1px_0_rgba(255,255,255,0.8)] max-[390px]:rounded-[30px] max-[390px]:px-5 max-[390px]:py-[22px]">
+        <div className="w-full bg-white rounded-[34px] pt-[26px] pb-[26px] px-[22px] mb-7 -rotate-3 relative shadow-[0_12px_30px_rgba(0,0,0,0.05),inset_0_1px_0_rgba(255,255,255,0.8)] max-[390px]:rounded-[30px] max-[390px]:px-5 max-[390px]:py-[22px]">
 
           <div className="text-[#DA4848] font-nuni text-[18px] tracking-[2px] mb-4">
             ★★★★★
@@ -38,7 +38,7 @@ export default function Testimonials() {
         </div>
 
         {/* card 2 */}
-        <div className="w-full bg-white rounded-[34px] pt-[26px] pb-[26px] px-[22px] rotate-[4deg] relative shadow-[0_12px_30px_rgba(0,0,0,0.05),inset_0_1px_0_rgba(255,255,255,0.8)] max-[390px]:rounded-[30px] max-[390px]:px-5 max-[390px]:py-[22px]">
+        <div className="w-full bg-white rounded-[34px] pt-[26px] pb-[26px] px-[22px] rotate-3 relative shadow-[0_12px_30px_rgba(0,0,0,0.05),inset_0_1px_0_rgba(255,255,255,0.8)] max-[390px]:rounded-[30px] max-[390px]:px-5 max-[390px]:py-[22px]">
 
           <div className="text-redo font-nuni text-[18px] tracking-[2px] mb-4">
             ★★★★★

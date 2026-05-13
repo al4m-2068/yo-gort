@@ -1,73 +1,108 @@
 import React from 'react';
+import { Logo } from './Illust';
+import { Send } from 'lucide-react';
 
 const Footer = () => {
-  const flavorLinks = ['Our Flavors', 'Subscription', 'Recipes', 'Store Finder'];
-  const supportLinks = ['FAQ', 'Shipping', 'Returns', 'Contact'];
+  const exploreLinks = [
+    'Our Flavors',
+    'Subscription',
+    'Recipes',
+    'Store Finder',
+  ];
+
+  const supportLinks = [
+    'FAQ',
+    'Shipping',
+    'Returns',
+    'Contact',
+  ];
 
   return (
-    <footer className="bg-[#3D145A] text-white p-8 md:p-12 lg:p-16 rounded-3xl w-full max-w-sm mx-auto shadow-xl">
-      <div className="flex flex-col gap-10">
+    <footer className="w-full bg-[#43005C] rounded-t-[28px] px-8 py-12 text-white">
+      <div className="flex items-start flex-col gap-12">
         
-        {/* Logo and Tagline */}
-        <div className="flex flex-col gap-4 text-left">
-          <div className="flex items-center gap-1">
-            <span className="text-3xl font-bold tracking-tight">YO!</span>
-            <span className="text-3xl font-light">gort</span>
-          </div>
-          <p className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-white/90">
-            Keep it creamy, keep it kinetic. Your daily joy in a jar.
+        <div className="flex flex-col gap-4 items-start">
+          <Logo className={'text-whitey h-14 w-auto mb-4'}/>
+          {/* Heading */}
+          <h2 className="text-[42px]/[110%] font-brigro font-bold text-yogrut/60 tracking-[-0.03em]">
+            Keep it creamy,
+            keep it kinetic.
+            Your daily joy
+            in a jar.
+          </h2>
+        </div>
+
+        {/* Explore */}
+        <div className="flex flex-col gap-6 w-full">
+          <h3 className="text-[32px]/[110%] font-bold font-brigro">
+            Explore
+          </h3>
+
+          <ul className="flex flex-col gap-2">
+            {exploreLinks.map((item) => (
+              <li key={item}>
+                <a
+                  href="#"
+                  className="text-base text-[#DCCBE4] hover:text-white transition"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Support */}
+        <div className="flex flex-col gap-6 w-full">
+          <h3 className="text-[32px]/[110%] font-brigro font-bold">
+            Support
+          </h3>
+
+          <ul className="flex flex-col gap-2">
+            {supportLinks.map((item) => (
+              <li key={item}>
+                <a
+                  href="#"
+                  className="text-base text-yogrut/60 hover:text-yogrut transition"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Newsletter */}
+        <div className="flex flex-col gap-6 w-full">
+          <h3 className="text-[28px]/[110%] font-bold font-brigro">
+            The Scoop
+          </h3>
+
+          <p className="text-base text-[#DCCBE4] leading-relaxed">
+            Get fresh updates and exclusive drops.
           </p>
-        </div>
 
-        {/* Navigation Sections */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Explore</h3>
-            <ul className="space-y-3">
-              {flavorLinks.map(link => (
-                <li key={link}>
-                  <a href="#" className="text-base text-white/80 hover:text-white transition-colors">{link}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Support</h3>
-            <ul className="space-y-3">
-              {supportLinks.map(link => (
-                <li key={link}>
-                  <a href="#" className="text-base text-white/80 hover:text-white transition-colors">{link}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Newsletter Section */}
-        <div className="flex flex-col gap-4">
-          <h3 className="text-2xl font-bold">The Scoop</h3>
-          <p className="text-base text-white/80">Get fresh updates and exclusive drops.</p>
-          <div className="relative mt-2">
-            <input 
-              type="email" 
-              placeholder="yogort@gmail.com" 
-              className="w-full bg-[#4A1E6B] text-white text-base py-3 px-5 rounded-full outline-none placeholder:text-white/50 focus:ring-2 focus:ring-teal-300 transition-all"
+          <div className="relative">
+            <input
+              type="email"
+              placeholder="yogort@gmail.com"
+              className="w-full h-[52px] rounded-full bg-yogrut/10 px-6 text-[14px] text-yogrut placeholder:text-yogrut/40 outline-none"
             />
-            <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-teal-300 p-2.5 rounded-full hover:bg-teal-400 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5 text-[#3D145A]">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-              </svg>
+
+            <button className="absolute right-2 top-1/2 -translate-y-1/2 w-[38px] h-[38px] rounded-full bg-aquo flex items-center justify-center text-navo">
+              <Send size={16}/>
             </button>
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-white/20 pt-10 text-center">
-          <p className="text-sm font-light text-white/70">
-            © 2024 YO!GORT. KEEP IT CREAMY. MADE WITH ♡ FOR THE KINETIC GENERATION.
+        {/* Bottom */}
+        <div className="mt-16 pt-12 w-full border-t border-yogrut/10">
+          <p className="text-center text-[10px] leading-base tracking-[0.04em] uppercase text-yogrut/60">
+            © 2024 Yogort. Keep it creamy. Made with ♡ for
+            <br />
+            the kinetic generation.
           </p>
         </div>
-
       </div>
     </footer>
   );
