@@ -58,12 +58,12 @@ export default function Nav() {
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className="fixed left-0 top-0 w-[70%] h-screen flex flex-col bg-white border-r border-gray-100 pt-20"
           >
-            <li className="py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a href="#hero">Home</a></li>
-            <li className="py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a href="#menu">Menu</a></li>
-            <li className="py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a href="#specials">Specials</a></li>
-            <li className="py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a href="#joys">Joys</a></li>
-            <li className="py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a href="#specials">FAQ</a></li>
-            <li className="py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a href="#specials">Contact</a></li>
+            <li className="hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a className="block py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight" onClick={() => setOpen(false)} href="#hero">Home</a></li>
+            <li className="hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a className="block py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight" onClick={() => setOpen(false)} href="#menu">Menu</a></li>
+            <li className="hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a className="block py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight" onClick={() => setOpen(false)} href="#specials">Specials</a></li>
+            <li className="hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a className="block py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight" onClick={() => setOpen(false)} href="#joys">Joys</a></li>
+            <li className="hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a className="block py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight" onClick={() => setOpen(false)} href="#faq">FAQ</a></li>
+            <li className="hover:bg-redo cursor-pointer hover:text-whitey transition-colors duration-100"><a className="block py-4 px-6 font-brigro text-2xl font-extrabold tracking-tight" onClick={() => setOpen(false)} href="#contact">Contact</a></li>
           </motion.ul>
         )}
       </AnimatePresence>

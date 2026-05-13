@@ -3,7 +3,7 @@ import Nav from "./Menu";
 
 const Hero = () => {
   return (
-    <div className="bg-whitey h-screen max-h-screen">
+    <section id="hero" className=" h-screen max-h-screen">
       {/* Hero Section */}
       <section className="px-8 text-center w-full h-[calc(100vh-80px)] flex flex-col items-center justify-center">
 
@@ -34,7 +34,7 @@ const Hero = () => {
           </button>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 

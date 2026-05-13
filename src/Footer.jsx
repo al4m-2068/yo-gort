@@ -18,7 +18,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-[#43005C] rounded-t-[28px] px-8 py-12 text-white">
+    <footer id='contact' className="w-full bg-[#43005C] rounded-t-[28px] px-8 py-12 text-white">
       <div className="flex items-start flex-col gap-12">
         
         <div className="flex flex-col gap-4 items-start">

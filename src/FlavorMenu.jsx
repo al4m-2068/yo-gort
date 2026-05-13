@@ -1,7 +1,7 @@
 import React from 'react';
 import menuData from './dataMenu.json';
 // Sesuaikan import image dengan folder asetmu
-import heroImg from './assets/3-yo.png'; 
+import heroImg from '/assets/3-yo.png'; 
 import { ShoppingCart } from 'lucide-react';
 
 const FlavorMenu = () => {
@@ -16,7 +16,7 @@ const FlavorMenu = () => {
   };
 
   return (
-    <section className="bg-whitey min-h-screen px-6 py-12 font-sans">
+    <section id='menu' className="bg-whitey min-h-screen px-6 py-12 font-sans">
       {/* Header Section */}
       <div className="text-center mb-8">
         <h1 className="text-[40px]/[110%] font-bold text-navo font-brigro">
@@ -32,7 +32,7 @@ const FlavorMenu = () => {
         <img 
           src={heroImg} 
           alt="Featured Yogurt" 
-          className="w-full max-w-sm rounded-[40px] shadow-sm shadow-stone-200"
+          className="w-full aspect-square rounded-[40px] shadow-stone-200"
         />
       </div>
 
