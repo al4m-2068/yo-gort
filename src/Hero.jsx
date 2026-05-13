@@ -34,8 +34,6 @@ const Hero = () => {
             Explore Flavors
           </button>
         </div>
-        <p>p konflik</p>
-        <p>are we fr bro ;-;</p>
       </section>
     </div>
   );
