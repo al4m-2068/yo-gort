@@ -43,7 +43,7 @@ const Footer = () => {
               <li key={item}>
                 <a
                   href="#"
-                  className="text-base text-[#DCCBE4] hover:text-white transition"
+                  className="text-base text-yogrut/60 hover:text-yogrut transition"
                 >
                   {item}
                 </a>
@@ -78,7 +78,7 @@ const Footer = () => {
             The Scoop
           </h3>
 
-          <p className="text-base text-[#DCCBE4] leading-relaxed">
+          <p className="text-base text-yogrut leading-relaxed">
             Get fresh updates and exclusive drops.
           </p>
 
