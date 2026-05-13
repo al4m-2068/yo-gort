@@ -1,0 +1,35 @@
+{
+  "sectionTitle": "Pick Your Flavor",
+  "sectionSubtitle": "Three distinct ways to brighten your day.",
+  "heroImage": "3-yo",
+  "menuItems": [
+    {
+      "id": 1,
+      "name": "Wild Strawberry",
+      "description": "Sweet, tart, and purely refreshing.",
+      "price": 4.50,
+      "rating": 4.9,
+      "badge": "POPULAR",
+      "badgeType": "popular"
+    },
+    {
+      "id": 2,
+      "name": "Mountain Honey",
+      "description": "Liquid gold in every single spoonful.",
+      "price": 4.95,
+      "rating": 5.0,
+      "badge": "NEW",
+      "badgeType": "new"
+    },
+    {
+      "id": 3,
+      "name": "Bursting Blueberry",
+      "description": "Antioxidant power in a creamy base.",
+      "price": 4.50,
+      "rating": 4.8,
+      "badge": "BEST VALUE",
+      "badgeType": "value"
+    }
+  ],
+  "footerButton": "See All"
+}
