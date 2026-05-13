@@ -20,9 +20,8 @@ const Hero = () => {
         </h1>
 
         {/* Description */}
-        <p className="text-grey text-base leading-[1.5] mb-10">
-          Indulge in our creamy, probiotic-rich yogurt made with 100% natural
-          ingredients and a whole lot of love.
+        <p className="text-grey text-base/[145%] mb-10">
+          Indulge in our creamy, probiotic-rich yogurt made with 100% natural ingredients and a whole lot of love.
         </p>
 
         {/* Buttons */}
